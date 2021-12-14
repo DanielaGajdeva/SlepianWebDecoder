@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Slepian Web Decoder</title>
+</head>
+<body>
+<div class="d-flex flex-column">
+    <h1 class="d-flex justify-content-center">Slepian Web Decoder</h1>
+	<h5>В лявото текстово поле се въвежда пораждащата матрица G.</h5>
+	<h5>Цифрите се въвеждат без празно място, всяка кодова дума на отделен ред.</h5>
+	<h5>В дясното поле се въвеждат думите, които трябва да се декодират(U1,U2,U3...). Всяка дума се въвежда на отделен ред, без празно място между цифрите.</h5>
+	<h5>Когато данните са въведени натиснете бутона Solve. Под бутона ще излезе информацията за кода и таблицата на Слепян.</h5>
+</div>
+<div class="d-flex justify-content-center">
+    <table class="table w-50">
+        <thead>
+        <tr>
+            <th scope="col">Матрица G</th>
+            <th scope="col">Пристигнали кодови думи</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div class="form-outline">
+                    <textarea class="form-control" id="G" rows="10"></textarea>
+                </div>
+            </td>
+            <td>
+                <div class="form-outline">
+                    <textarea class="form-control" id="U" rows="10"></textarea>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary btn-lg" id="solve">Solve</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<hr/>
+<div id="result" class="d-flex justify-content-center">
+
+</div>
+<hr/>
+<br>
+<div id="resultTable" class="d-flex justify-content-center">
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
